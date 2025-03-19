@@ -7,7 +7,6 @@ let product=new Product(
     500,
     true,
     new Date("2024-4-10"),
-    undefined,
 );
 
 console.log(product);
