@@ -19,5 +19,12 @@ let product = [
   ),
 ];
 
-console.log(product);
 console.table(product);
+
+setProductDisplay(product[0], false);
+
+console.table(product);
+
+function setProductDisplay(product: Product, isShow: boolean) {
+  product.isShow = isShow;
+}
