@@ -1,7 +1,7 @@
-import { PaginationComponent } from './../pagination/pagination.component';
-import { Component, Input, input, output } from '@angular/core';
-import { ProductCardComponent } from '../product-card/product-card.component';
+import { Component, input, output } from '@angular/core';
 import { Product } from '../models/product';
+import { ProductCardComponent } from '../product-card/product-card.component';
+import { PaginationComponent } from './../pagination/pagination.component';
 
 @Component({
   selector: 'app-product-card-list',
