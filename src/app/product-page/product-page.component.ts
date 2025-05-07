@@ -1,11 +1,10 @@
-import { Component, inject, OnInit, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
+import { rxResource } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
-import { BehaviorSubject, combineLatest, startWith, Subject, switchMap } from 'rxjs';
 import { Product } from '../models/product';
 import { ProductCardListComponent } from '../product-card-list/product-card-list.component';
 import { ProductService } from '../services/product.service';
 import { PaginationComponent } from './../pagination/pagination.component';
-import { rxResource, toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-product-page',
